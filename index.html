@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>All Meeting</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>View All the Scheduled Meetings</h1>
+  </body>
+</html>
+<script>
+  function createTable(tableData) {
+    var table = document.createElement('table');
+    var tableBody = document.createElement('tbody');
+
+    tableData.forEach(function(rowData) {
+      var row = document.createElement('tr');
+
+      rowData.forEach(function(cellData) {
+        var cell = document.createElement('td');
+        cell.appendChild(document.createTextNode(cellData));
+        row.appendChild(cell);
+      });
+
+      tableBody.appendChild(row);
+    });
+
+    table.appendChild(tableBody);
+    document.body.appendChild(table);
+  }
+
+  createTable(requests);
+</script>

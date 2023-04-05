@@ -1,0 +1,31 @@
+button{
+  font-size: 30px;
+  cursor: pointer;
+  display: block;
+  width: 40%;
+  height: 100px;
+}
+h1{
+  font-size: 50px;
+  background-color: #FDFDBD;
+  text-align: center;
+}
+.buttons {
+  text-align: center;
+  padding-left: 550px;
+}
+body{
+  background-color: #C8FFD4;
+}
+form{
+  font-size: 30px;
+}
+.input{
+  height: 30px;
+}
+.submit{
+  height: 40px;
+  width: 100px;
+  background-color: #FFECEF;
+  cursor: pointer;
+}
